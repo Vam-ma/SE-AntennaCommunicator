@@ -1,0 +1,32 @@
+﻿R e a d m e
+-----------
+
+This Script allow you to communicate between grids.
+You can send messages, action requests, or transfer commands to other program blocks.
+at now basic display mode show only the latest message.
+script sleeps at background and only wakes up if it receive message or you run an argument.
+
+
+actions:
+	-Build timer block
+	-Write one keyword to its custom data
+	-Set actions to it
+
+Fancy display mode is work in progress.
+
+Todo:	message storage,
+		fancy display,
+		(automatic connection to owned grids)?.
+
+Commands:
+Send			"Send ['receiver_id', 'receiver_name' or 'group_name'] :[message]"
+add_contact		"add_contact [contact_id] [contact_name]"
+add_action		"add_action [action_name]"
+add_group		"add_group [group_name] [contact_id]" you can add as many contacts as you want, same command to add contact to old group
+Next
+Previous
+Enter
+Cancel
+change			"change [parameter 2] [new data] ", or if change name or id "change [parameter] [old id] [new value]"	//parameters: "prefix", "contact_name", "external_tag" 
+show			"show [param]"	:params contact, groups, group [group_name]
+remove			"['contact' or 'group'] [contact id or group name]"
